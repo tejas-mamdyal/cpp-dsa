@@ -1,0 +1,28 @@
+/*
+PATTERN LAB — prerequisites: output, for loops and integer expressions.
+The outer loop selects a row; inner loops choose spaces, symbols or numbers in
+that row. Before running, draw a table: row index, leading spaces, item count,
+and printed value at each column. Derive each loop bound from that table.
+Output order matters: spaces must be emitted before symbols when aligning right.
+An n-row triangle prints about n*(n+1)/2 symbols: O(n^2) time, O(1) extra space.
+For fixed dimensions, count the actual output; for a rectangle use O(rows*columns).
+Exercise: mirror this pattern, then parameterize its size; test zero and one row.
+Explain why each inner loop starts and stops at its particular bounds.
+*/
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a;
+    int b;
+    int c;
+    int d;
+    cout << "Enter four sides of a rectangle:\n";
+    cin >> a >> b >> c >> d;
+    if (((a == b) && (c == d)) || ((a == c) && (b == d)) || ((a == d) && (c == b))) {
+        cout << "Rectangle";
+    } else {
+        cout << "Not a rectangle";
+    }
+    return 0;
+}

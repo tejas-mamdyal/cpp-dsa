@@ -1,0 +1,8 @@
+# Generic interfaces and build boundaries: reasoning before code
+
+A template defines a family of functions or classes. typename T names a type parameter;the compiler instantiates it for actual argument types. Templates usually need their definition visible in the including header. A translation unit is a source file after preprocessing. Declarations describe an interface;one non-inline definition supplies its implementation. Include guards prevent repeated declarations within a translation unit,but cannot repair duplicate external definitions across source files. Inline functions may have matching definitions in several units. Namespaces prevent accidental name collisions. Compile each .cpp to an object,then link all required objects. The capstone provides real headers,implementation files,CMake and a portable direct compiler command;these standalone exercises isolate the interface decisions first.
+
+For every source,write its domain and output convention before running it. Reproduce the commented trace;identify what each state means at the start and end of an iteration. Justify every discarded candidate,pruned branch or finalized value. Compare input,auxiliary and output storage separately. Copies,recursion depth and saved witnesses count toward storage.
+
+First solve a tiny instance by enumeration or direct scans. An independent reference should use a different control structure rather than restating the optimized recurrence. Empty,unreachable,duplicate and boundary cases depend on the lesson contract;do not silently broaden it. Finite checks support the proof but cannot substitute for it.
+

@@ -1,0 +1,15 @@
+# Generated outputs
+/build/
+*.exe
+*.o
+*.obj
+*.out
+*.pdb
+*.ilk
+hello
+
+# Local editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
