@@ -1,5 +1,3 @@
-# Bridge checkpoint
+# Checkpoint
 
-20 points: independently solve practice tasks1,3,5,7. Each: approach2, correct
-result1, boundary1, type/cost explanation1. Aim for16/20.
-
+Explain what the linked tasks cover and what they do not. Apply the concept independently.
